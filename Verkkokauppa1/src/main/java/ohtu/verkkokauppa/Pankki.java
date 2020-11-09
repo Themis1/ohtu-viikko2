@@ -1,8 +1,8 @@
 package ohtu.verkkokauppa;
 
 public class Pankki implements PankkiIF {
-
-    private static Pankki instanssi;
+    public Pankki pankki;
+    /*private static Pankki instanssi;
 
     public static Pankki getInstance() {
         if (instanssi == null) {
@@ -10,11 +10,11 @@ public class Pankki implements PankkiIF {
         }
 
         return instanssi;
-    }
-    private Kirjanpito kirjanpito;
+    }*/
+    private KirjanpitoIF kirjanpito;
 
-    public Pankki() {
-        kirjanpito = Kirjanpito.getInstance();
+    public Pankki(KirjanpitoIF kirjanpito) {
+        this.kirjanpito = kirjanpito;
     }
 
     @Override
