@@ -1,9 +1,9 @@
+package ohtu.verkkokauppa;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-package ohtu.verkkokauppa;
 @Component
-
 public class Pankki implements PankkiIF {
     public Pankki pankki;
     /*private static Pankki instanssi;
