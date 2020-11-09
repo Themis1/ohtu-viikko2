@@ -1,7 +1,10 @@
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 package ohtu.verkkokauppa;
 
 import java.util.*;
-
+@Component
 public class Varasto implements VarastoIF {
 
     public Varasto varasto;

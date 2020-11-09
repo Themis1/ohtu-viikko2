@@ -1,13 +1,20 @@
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+
 package ohtu.verkkokauppa;
-
+@Component
 public class Kauppa {
-
+    //@Autowired
+    private Kauppa kauppa;
+    
     private VarastoIF varasto;
     private PankkiIF pankki;
     private Ostoskori ostoskori;
     private ViitegeneraattoriIF viitegeneraattori;
     private String kaupanTili;
 
+    @Autowired
     public Kauppa(VarastoIF varasto, PankkiIF pankki, ViitegeneraattoriIF viitegeneraattori) {
         this.varasto = varasto;
         this.pankki = pankki;

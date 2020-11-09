@@ -1,7 +1,11 @@
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 package ohtu.verkkokauppa;
 
+@Component
 public class Viitegeneraattori implements ViitegeneraattoriIF {
-
+    
     public Viitegeneraattori viitegeneraattori;
     /*private static Viitegeneraattori instanssi;
 

@@ -1,8 +1,10 @@
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 package ohtu.verkkokauppa;
 
 import java.util.ArrayList;
-
+@Component
 public class Kirjanpito implements KirjanpitoIF {
 
     public Kirjanpito kirjanpito;
